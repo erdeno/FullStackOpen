@@ -1,0 +1,31 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0b3JtIiwiaWQiOiI2MGFmNmE1ZjQ4MTc4ZTEyZDdjOWJlMjIiLCJpYXQiOjE2MjIxMjA0MzIsImV4cCI6MTYyMjEyNDAzMn0.YKx2QLZXxYIDqV9IbJCYuDkwAvxcgRMgvHAh5Nc9Yrw
+
+
+{
+    "title": "Type wars New New",
+    "author": "Robert C. Martin",
+    "url": "http://blog.cleancoder.com/uncle-bob/2016/05/01/TypeWars.html"
+}
+  
+
+###
+GET http://localhost:3003/api/blogs
+
+###
+PUT http://localhost:3003/api/blogs/60b25aaae8ad07398f493064
+Content-Type: application/json
+
+
+{
+    "title": "Type wars Ultimate",
+    "author": "Robert C. Martin",
+    "url": "http://blog.cleancoder.com/uncle-bob/2016/05/01/TypeWars.html",
+    "likes": 12
+}
+
+
+###
+DELETE http://localhost:3003/api/blogs/60af9814d5a88f39af0d921e
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0b3JtIiwiaWQiOiI2MGFmNmE1ZjQ4MTc4ZTEyZDdjOWJlMjIiLCJpYXQiOjE2MjIxMjA0MzIsImV4cCI6MTYyMjEyNDAzMn0.YKx2QLZXxYIDqV9IbJCYuDkwAvxcgRMgvHAh5Nc9Yrw
